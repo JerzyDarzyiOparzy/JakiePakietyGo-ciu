@@ -1,0 +1,311 @@
+----------------------LAB 3-----------------------------------
+_____________________________________________________________________
+ZADANIE 1 - 1) Utworzyc szereg rozdzielczy
+przedzialowy, histogram, 2) miary statystyczne, 3) wykres ramka-wasy.
+_____________________________________________________________________
+1) 
+---------------------------------------------------------------------
+Statystyki podst -> tabele licz. -> wiecej -> dokladnosc przdzialow
+ = pierw z n  + Krok (minimum) -> + histogramy
+
+---------------------------------------------------------------------
+2)
+---------------------------------------------------------------------
+Statystyki podst -> stat. opisowe -> wiecej -> + zaznaczyc 10 miar
+
+---------------------------------------------------------------------
+
+Średnia dobowa dawka promieniowania wynosi 13,2 MED
+
+Współczynnik zmienności - 29,2% - odchylenie standardowe
+stanowi 29,2% wartości średniej
+
+Mediana - 13,5: w co najmniej 50% miejscowości dawka promieniowania wynosi co najwyżej 13,5 MED (i w co najmniej 50% miejscowości dawka promieniowania wynosi co najmniej 13,5 MED)
+
+Kwantyl dolny - 11,5: w co najmniej 25% miejscowości dawka promieniowania wynosi co najwyżej 11,5 MED (i w co najmniej 75% miejscowości dawka promieniowania
+wynosi co najmniej 11,5 MED)
+
+Kwantyl górny - 15: w co najmniej 75% miejscowości dawka promieniowania wynosi
+co najwyżej 15 MED (i w co najmniej 25% miejscowości dawka promieniowania
+wynosi co najmniej 15 MED)
+
+Współczynnik skośności - -0,34: asymetria lewostronna; w więcej niż 50% miejscowości dawka promieniowania jest powyżej średniej
+
+3)
+---------------------------------------------------------------------
+wykresy 2W -> ramka wasy -> wartosc [Mediana] -> wiecej 
+-> pokaż dane surowe
+---------------------------------------------------------------------
+
+_____________________________________________________________________
+ZADANIE 2 - Oszacowac metoda przedzialowa przy wsp. ufnosci x (0,95)
+	    srednia
+_____________________________________________________________________
+---------------------------------------------------------------------
+Statystyki opisowe -> więcej -> + średnia 
+		  	        + Przedz ufn średniej
+---------------------------------------------------------------------
+
+
+Przedzial (16,1; 23,9) dla prawdopodobieństwa 0,95
+pokrywa nieznaną wartość średnią czasu mocowania
+detalu na obrabiarce.
+
+_____________________________________________________________________
+ZADANIE 3 - wsp ufnosci x zbudowac przedzial ufnosci okreslajacy
+ 	    zróznicowanie. Rozklad normalny.
+_____________________________________________________________________
+
+---------------------------------------------------------------------
+Statystyki opisowe -> więcej -> + odch. stand. 
+                                + PU dla odch. std. przedzial x (0,95)
+---------------------------------------------------------------------
+
+Przedział (0,16; 0,49) z
+prawdopodobieństwem równym 0,90
+pokrywa nieznaną wartość
+odchylenia standardowego
+pracochłonności detali.
+
+
+_____________________________________________________________________
+ZADANIE 4 - ta duza tabelka - oszacowac metoda przedzialowa
+	    przyjmujac wsp ufnosci x srednia - EXCEL
+_____________________________________________________________________
+
+Przedział (0,65 (a); 0,69 (b)) z prawdopodobieństwem równym 0,95 pokrywa
+nieznaną wartość średnią czasu trwania efektu świetlnego
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------LAB 4--------------------------------------
+Poziom istotnosci - Testowanie hipotez statystycznych
+
+_____________________________________________________________________
+ZADANIE 1 -  Czy x ma rozklad normalny, a =0,05
+_____________________________________________________________________
+---------------------------------------------------------------------
+Wykresy 2W -> Wykresy normalnosci -> + Test Shapiro-Wilka -> opisy
+---------------------------------------------------------------------
+H0 - waga owoców ma rokład normalny
+H1 - waga owoców nie ma rokładu normalnego
+
+(Po wykresie normalnosci SW-W)---------------------------------------
+
+Dla testu W Shapiro-Wilka poziom p = 0,173 > 0,05,
+zatem nie ma podstaw do odrzucenia hipotezy H_0 o normalności
+rozkładu wagi owoców agrestu
+_____________________________________________________________________
+ZADANIE 2 - Przyjmujac poziom istotnosci a = 0,05 zwerykowac hipoteze,
+ 	    ze sredni czas zycia komórek w
+	    tym srodowisku jest wiekszy niz 4 godziny.
+_____________________________________________________________________
+
+H0: Średni czas życia komórek jest równy 4 godziny -  m = 4
+
+H1: Średni czas życia komórek jest większy niż 4 godziny - m > 4
+
+Sprawdzamy, czy badana zmienna ma rozkład normalny
+
+---------------------------------------------------------------------
+Statystyki pods. -> test dla pojed. proby ( test t-Studenta) -> wiecej
+		+ testuj srednie (x = 4)
+---------------------------------------------------------------------
+
+(H0: czas życia komórek ma rozkład normalny,
+ H1: czas życia komórek nie ma rozkładu normalnego)
+
+---------------------------------------------------------------------
+Wykresy 2W -> Wykresy normalnosci -> + Test Shapiro-Wilka -> opisy
+---------------------------------------------------------------------
+
+(Po wykresie normalnosci SW-W)--------------------------------------
+
+Ponieważ dla testu W Shapiro-Wilka poziom p = 0,67368 > 0,05 ,
+więc nie ma podstaw do odrzucenia hipotezy o 
+normalności rozkładu zmiennej "czas życia komórek"
+
+Możemy zastosować test t-Studenta:
+
+(Po tescie dla pojedynczej proby)------------------------------------
+
+Dla testu t-Studenta p = 0,015629
+
+
+p/2 < 0,05, zatem odrzucamy hipoteze zerową
+na korzyść alternatywnej(średni czas życia
+komórek jest wiekszy niż 4 godziny)
+
+
+
+_____________________________________________________________________
+ZADANIE 3 - Na poziomie istotnosci a = 0; 05 zwerykowac hipoteze o
+	    jednakowym czasie snu w obu grupach ( 2 grupy )
+_____________________________________________________________________
+
+H0: Średni czas snu w obu grupach jest jednakowy - m1 = m2
+
+H1: Średni czas snu w obu grupach jest różny - m_1 != m_2
+
+Sprawdzamy normalność rozkładu.
+
+---------------------------------------------------------------------
+Wykresy 2W -> Wykresy normalnosci -> + Test Shapiro-Wilka 
+				     + wiele na jednym -> opisy
+---------------------------------------------------------------------
+
+(Po wykresie normalnosci SW-W)---------------------------------------
+
+Dla testu W Shapiro-Wilka p = 0,6811 (dla chłopców)
+i p = 0,2407 (dla dziewczynek).
+W obu przypadkach p > alfa = 0,05 , zatem nie ma podstaw do
+odrzucenia hipotezy o normalności rozkładu w obu grupach.
+
+
+---------------------------------------------------------------------
+Statyst. pods -> test dla prob niezaleznych (wzg. zmiennych) ->
+		 + test Levene'a + Test B i F
+---------------------------------------------------------------------
+
+
+(Po tescie t dla prob niezaleznych (wzgl zmn.)-----------------------
+
+Dla testu Browna-Forsytha p = 0,47 ,
+dla testu Levene'a p = 0,44, 
+dla testu F (wariancje) p = 0,72;
+zatem nie ma podstaw do odrzucenia hipotezy o
+równości wariancji w obu grupach
+
+---------------------------------------------------------------------
+Statyst niepar -> porow dwoch prob zalezn (zmiennych)
+---------------------------------------------------------------------
+
+(+ nieparam -> porow 2 zmiennych zalez)----------------------
+Dla testu t-Studenta p = 0,088144 > 0,05
+Nie ma podstaw do odrzucenia hipotezy H0 o jednakowym
+czasie snu.
+
+p/2 = 0,044 < 0,05 odrzucamy H0 na korzyść H1
+
+
+_____________________________________________________________________
+ZADANIE 4 - W jednym z pomieszczeń fabrycznych temperatura powinna utrzymywac się na poziomie 4oC.
+inne testy  W ciągu roku dokonano 60 pomiarów temperatury w tym pomieszczeniu, na podstawie których
+istot.      stwierdzono, że średnia temperatura wynosiła 3,74oC, a odchylenie standardowe s = 1,4oC.
+	    Czy można uznać, że średnia temperatura w tym pomieszczeniu spełnia normę? Przyjąć poziom
+	    istotności a = 0,05. Zakładamy, że badana zmienna ma rozkład normalny.
+_____________________________________________________________________
+
+------------------------------------------------------------------------------
+statystyki podstawowe -> inne testy istotnosci
+------------------------------------------------------------------------------
+śr1 = 3,74, śr2 = 4, odch.std = 1,4, n1 = 60 | p = 0,1556 dwustronny
+
+H0: m=4 (średnia temperatura w pomieszczeniu wynosi 4oC)
+H1: m<>4
+Inne testy istotnosci(test dwustronny)
+p = 0,1556> alfa, zatem nie ma podstaw do odrzucenia H0
+
+
+_____________________________________________________________________
+ZADANIE 5 - W wylosowanej próbie 100 pracownic du»ego zakªadu przemysªowego, ±redni czas przebywania
+	    ich na zwolnieniach lekarskich w ci¡gu roku wyniósª x = 38 dni, a odchylenie standardowe
+	    s = 16 dni. Czy mo»na na tej podstawie twierdzi¢, »e ±redni roczny czas zwolnie« lekarskich dla
+	    pracownic tego zakªadu jest dªu»szy ni» 31 dni? Przyj¡¢ poziom istotno±ci  = 0; 01. Zakªadamy,
+	    »e badana zmienna ma rozkªad normalny.
+_____________________________________________________________________
+
+------------------------------------------------------------------------------
+statystyki podstawowe -> inne testy istotnosci
+------------------------------------------------------------------------------
+śr1 = 38, śr2 =  31, odch.std = 16, n1 = 100 | p = 0,000 dwustronny
+H0: m=31
+H1: m>31
+Inne testy istotnosci(test jednostronny)
+p = 0,0000> alfa, zatem odrzucamy H0 na korzysc H1
+_____________________________________________________________________
+ZADANIE 6 - Zbadać, czy średnia ocen na IV roku zale»y od średniej ocen na I roku, przeanalizowa¢
+	    istotność tej zależności.
+	    Znale¹¢ oszacowanie liniowej funkcji regresji cechy Y względem cechy X.
+__________________________________________________________________________________
+------------------------------------------------------------------------------
+macierze korelacji -> wiecej -> wykres 2W rozrzutu (korelacja silna dodatnia)
+		      opcje -> dokładne tabele wyników
+------------------------------------------------------------------------------
+
+Współczynnik korelacji wynosi 0,83 ( r(X, Y) ), co świadczy o silnej zależnosći
+średniej ocen na IV roku od średniej ocen na I roku
+
+Współczynnik determinacji wynosi 0,69 ( r2 ), co oznacza
+,że średnia ocen na IV roku jest 69% wyjaśniona średnią ocen na I roku
+
+H0: wsp. korelacji jest równy 0
+H0: wsp. korelacji jest różny od 0
+Poziom istotnosci p dla statystyki t wynosi 0,0029 < 0.05
+zatem współczynnik korelacji jest istotnie różny od zera
+------------------------------------------------------------
+regresja wieloraka -> y -> x -> podsumowanie: wyniki regresji
+-------------------------------------------------------------
+Zależność średniej ocen na IV roku od średniej ocen na I roku można
+opisać wzorem: y=0,62+1,62+/-0,21 (( x | b ) + (w.wolny | b ) +/- (błąd std.estymacji)
+
+
+__________________________________________________________________________________
+
+------------------DODATKOWE_NOTATKI------------------------------
+
+
+N(śrd, odch,stand)
+Rozkl, noramlny
+
+
+Zad w excelu (n = 1000)
+ni | xi | xi*ni| (xi - średnia)^2 | ((xi-średnia)^2*ni)
+
+alfa
+n
+srednia
+wariancja
+odchstand
+ua
+a
+b
+
+
+Średnia = (Suma ni)/n
+wariancja = (Suma(xi-średnia)^2*ni)/n
+Odchylenie = pierwiastek z wariancji
+rozklad = ROZKŁAD.T.ODW(alfa^2; n-1)
+Lewy kraniec = Średnia - rozkład * odchylenie/pierwiastek(n-1)
+Prawy kraniec = Średnia + rozkład * odchylenie/pierwiastek(n-1)
+
+LAB 4
+DLA TESTÓW DWUSTRONNYCH(NP.COŚ JEST RÓWNE, A ALTERNATYWA = NIE RÓWNE):
+p<ALFA - ODRZUCAMY H0 NA RZECZ H1
+p>ALFA - NIE MA PODSTAW DO ODRZUCENIA H0
+
+DLA TESTÓW JEDNOSTRONNYCH(NP.COŚ WIĘKSZE BĄDŹ MNIEJSZE):
+p/2<ALFA - ODRZUCAMY H0 NA RZECZ H1
+p/2>ALFA - NIE MA PODSTAW DO ODRZUCENIA H0
+
+Jeśli sprawdzamy 2 zmienne, to robimy to oddzielnie na wspólnym teście shapiro-wilka
+
+P WARIANCJE, P LEVENE'A, P BM-FORS MUSZĄ SPEŁNIAĆ TEN SAM WARUNEK(w przypadku gdy dowodzimy H0) > alfa(0,05))
+
+
+jeżeli r zbliża się do 1 to korelacja jest dodatnia, a jeżeli do -1 to ujemna
+
+
+ 
+b) Nachylenie zal: Y = współczynnik kierunkowy prostej
+Stała zal: Y = wyraz wolny
